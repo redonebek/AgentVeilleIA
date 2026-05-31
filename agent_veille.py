@@ -143,7 +143,7 @@ def build_html(body: str, count: int) -> str:
     <span class="badge">Top 10 Nouveautés</span>
   </div>
   <div class="body">
-    <div class="stats">📡 <strong>{count} articles</strong> analysés depuis {len(RSS_SOURCES)} sources spécialisées · Synthèse par Gemini AI</div>
+    <div class="stats">📡 <strong>{count} articles</strong> analysés depuis 10 sources spécialisées · Synthèse par Gemini AI</div>
     <div class="content">{body}</div>
   </div>
   <div class="footer">

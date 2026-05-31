@@ -109,7 +109,7 @@ Commence par un <p> d'introduction (tendances du jour), puis le <ol> des 10 poin
 
 def synthesize(articles: list) -> str:
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-flash-latest")
     log.info("🤖 Appel Gemini API...")
     response = model.generate_content(
         build_prompt(articles),
